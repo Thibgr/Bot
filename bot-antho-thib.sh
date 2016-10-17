@@ -13,6 +13,9 @@ user=$(whoami)
 now=`date +%Y/%m/%d`
 hour=`date +%Hh%M`
 point=0
+lowerCase () {
+	echo "$*" | tr '[[:upper:]]' '[[:lower:]]' # translate the capital letter in lowercase letter
+}
 
 
 #QUIZZ
@@ -20,7 +23,7 @@ startquizz(){ #Question 1
                     echo "  Question n°1 : Quel insecte produit du miel ?"
                       read answer1
 
-                          if [ "$answer1" = "abeille" ] || [ "$answer1" = "ABEILLE" ] || [ "$answer1" = "L abeille" ] || [ "$answer1" = "Abeille" ]; then 
+                          if [ "$answer1" = *"abeille"* ] || [ "$answer1" = "ABEILLE" ] || [ "$answer1" = "L abeille" ] || [ "$answer1" = "Abeille" ]; then 
                              echo "Super $firstname ! "
                                point=$((point+1))
 
