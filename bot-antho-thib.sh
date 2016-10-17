@@ -18,6 +18,7 @@ lowerCase () {
 }
 
 
+
 #QUIZZ
 startquizz(){ #Question 1
                     echo "  Question n°1 : Quel insecte produit du miel ?"
@@ -272,7 +273,7 @@ startquizz(){ #Question 1
             }
 
 #Request the lastname and firstname
-echo "Salut ! Moi c'est Elbot, Comment tu t'appelles ? "
+echo "Salut ! Moi c'est Elbot version 2 modifié !, Comment tu t'appelles ? "
   read firstname 
   firstname=$firstname
 
